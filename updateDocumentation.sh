@@ -13,10 +13,12 @@ rm -R concertapp/static/js/lib/vendor/
 
 # Generate the client-side documentation
 echo 'Generating client side documentation'
+rm -Rf clientside/*
 java -jar $JSTOOLKIT_ROOT/jsrun.jar $JSTOOLKIT_ROOT/app/run.js -r -d=./clientside concertapp/static/js/ -t=$JSTOOLKIT_ROOT/templates/jsdoc/
 
 # Generate the server-side documentation
 echo 'Generating server side documentation'
+rm -Rf serverside/*
 doxygen Concert.cfg
 
 # Commit changes
