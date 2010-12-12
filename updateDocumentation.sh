@@ -24,6 +24,7 @@ doxygen Concert.cfg
 # Commit changes
 echo 'Adding new documentation to git'
 git add clientside/ serverside/
+git rm -r concertapp/
 echo 'Committing'
 git commit -a -m 'Documentation update.'
 
