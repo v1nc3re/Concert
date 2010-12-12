@@ -6,8 +6,8 @@ JSTOOLKIT_ROOT='/opt/local/bin/jsdoc-toolkit'
 
 
 # Get new client side code
-echo 'Updating client side code'
-git checkout master concertapp/static/js/
+echo 'Updating code from master'
+git checkout master concertapp/
 # Remove vendor client side code (we dont need to document any)
 rm -R concertapp/static/js/lib/vendor/
 
@@ -15,9 +15,13 @@ rm -R concertapp/static/js/lib/vendor/
 echo 'Generating client side documentation'
 java -jar $JSTOOLKIT_ROOT/jsrun.jar $JSTOOLKIT_ROOT/app/run.js -r -d=./clientside concertapp/static/js/ -t=$JSTOOLKIT_ROOT/templates/jsdoc/
 
+# Generate the server-side documentation
+echo 'Generating server side documentation'
+doxygen Concert.cfg
+
 # Commit changes
-echo 'Adding clientside documentation to git'
-git add clientside/
+echo 'Adding new documentation to git'
+git add clientside/ serverside/
 echo 'Committing'
 git commit -a -m 'Documentation update.'
 

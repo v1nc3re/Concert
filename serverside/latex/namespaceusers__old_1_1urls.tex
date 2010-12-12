@@ -1,0 +1,52 @@
+\hypertarget{namespaceusers__old_1_1urls}{
+\section{users\_\-old::urls Namespace Reference}
+\label{namespaceusers__old_1_1urls}\index{users\_\-old::urls@{users\_\-old::urls}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespaceusers__old_1_1urls_a195ba2853cd1001977eeee31a83de5b1}{urlpatterns}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceusers__old_1_1urls_a195ba2853cd1001977eeee31a83de5b1}{
+\index{users\_\-old::urls@{users\_\-old::urls}!urlpatterns@{urlpatterns}}
+\index{urlpatterns@{urlpatterns}!users_old::urls@{users\_\-old::urls}}
+\subsubsection[{urlpatterns}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf users\_\-old::urls::urlpatterns}}}
+\label{namespaceusers__old_1_1urls_a195ba2853cd1001977eeee31a83de5b1}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+1 patterns('concertapp.users.views',
+2     # Users
+3 #    url(r'^$', 'users', name='users'),
+4 #    url(r'^(\d+)/$', 'view_user', name='view_user'),
+5     url(r'^add/$', 'create_user', name='create_user'),
+6     url(r'^login/$', 'login_user', name='login_user'),
+7 #    url(r'^logout/$', 'logout_user', name='logout_user'),
+8 #    url(r'^change_password/$', 'change_password', name='change_password'),
+9     #Groups
+10 #    url(r'^(\d+)/groups/$', 'groups', name='groups'),
+11 #    url(r'^(\d+)/groups/create/$', 'create_group', name='create_group'),
+12 #    url(r'^(\d+)/groups/manage/$', 'choose_group', name='choose_group'),
+13 #    url(r'^(\d+)/groups/manage/(\d+)/accept_request/(\d+)/submit/$', 'add_to_gro
+      up', name='add_to_group'),
+14 #    url(r'^(\d+)/groups/manage/(\d+)/accept_request/(\d+)/$', 'accept_request', 
+      name='accept_request'),
+15 #    url(r'^(\d+)/groups/manage/(\d+)/pending_requests/$', 'pending_requests', na
+      me='pending_requests'),
+16 #    url(r'^(\d+)/groups/manage/(\d+)/remove_user/$', 'remove_user', name='remove
+      _user'),
+17 #    url(r'^(\d+)/groups/manage/(\d+)/remove/(\d+)/submit/$', 'remove_from_group'
+      , name='remove_from_group'),
+18 #    url(r'^(\d+)/groups/manage/(\d+)/remove/(\d+)/$', 'remove', name='remove'),
+19 #    url(r'^(\d+)/groups/manage/(\d+)/delete/$', 'delete_confirm', name='delete_c
+      onfirm'),
+20 #    url(r'^(\d+)/groups/manage/(\d+)/delete/submit/$', 'delete', name='delete'),
+      
+21 #    url(r'^(\d+)/groups/manage/(\d+)/$', 'manage_group', name='manage_group'),
+22     #ajax
+23 #    url(r'groupselect/$', 'user_group_select', name='user_group_select')
+24 
+25 )
+\end{DoxyCode}

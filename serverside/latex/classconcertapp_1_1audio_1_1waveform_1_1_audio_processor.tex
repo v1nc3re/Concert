@@ -1,0 +1,171 @@
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor}{
+\section{concertapp::audio::waveform::AudioProcessor Class Reference}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor}\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a74bf3933b571e0c356aad5b052b7064a}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a29d629725942599295925fd5d863bafd}{read}
+\item 
+def \hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a8ce532ecbb0198f56eccea0a8d4cb51b}{spectral\_\-centroid}
+\item 
+def \hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a9fc1c019c015a55f8310fa189b4bf38b}{peaks}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_abab70ccae8f197d91d34e78a01f4daf6}{fft\_\-size}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_adce38070119c56623dc9e9eeb95a6b44}{window}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_ac452f88cdd923fd42561d05d503e338b}{audio\_\-file}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_acfe9dae6f9c6f64f9d51859223304d74}{frames}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a3cc00456051b901ef1ad6f8702e4b49c}{samplerate}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_adea4bc5175e7ef1a39f5fc04ea560d80}{channels}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a4df8c0c3183f8fec892735f8b673c58c}{spectrum\_\-range}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a7d732e59d46bf8e9798f3aa200b9d982}{lower}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a1bf522437d5692a917e972dab6f64a1f}{higher}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a86583ba97dace9f23fc1104c7ea7d47a}{lower\_\-log}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_aa3843ad42db5b06bde44aa040879c4b8}{higher\_\-log}
+\item 
+\hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a564b093101aa472e53a23b9797ed8473}{clip}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a74bf3933b571e0c356aad5b052b7064a}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::waveform::AudioProcessor::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ audio\_\-file, }
+\item[{}]{ fft\_\-size, }
+\item[{}]{ window\_\-function = {\ttfamily numpy.ones}}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a74bf3933b571e0c356aad5b052b7064a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a9fc1c019c015a55f8310fa189b4bf38b}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!peaks@{peaks}}
+\index{peaks@{peaks}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{peaks}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::waveform::AudioProcessor::peaks (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ start\_\-seek, }
+\item[{}]{ end\_\-seek, }
+\item[{}]{ channel}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a9fc1c019c015a55f8310fa189b4bf38b}
+\begin{DoxyVerb}read all samples between start_seek and end_seek, then find the minimum and maximum peak
+in that range. Returns that pair in the order they were found. So if min was found first,
+it returns (min, max) else the other way around. \end{DoxyVerb}
+ \hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a29d629725942599295925fd5d863bafd}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!read@{read}}
+\index{read@{read}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::waveform::AudioProcessor::read (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ start, }
+\item[{}]{ size, }
+\item[{}]{ resize\_\-if\_\-less = {\ttfamily False}, }
+\item[{}]{ channel = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a29d629725942599295925fd5d863bafd}
+\begin{DoxyVerb}read size samples starting at start, if resize_if_less is True and less than size
+samples are read, resize the array to size and fill with zeros \end{DoxyVerb}
+ \hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a8ce532ecbb0198f56eccea0a8d4cb51b}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!spectral\_\-centroid@{spectral\_\-centroid}}
+\index{spectral\_\-centroid@{spectral\_\-centroid}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{spectral\_\-centroid}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::waveform::AudioProcessor::spectral\_\-centroid (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ seek\_\-point, }
+\item[{}]{ channel, }
+\item[{}]{ spec\_\-range = {\ttfamily 120.0}}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a8ce532ecbb0198f56eccea0a8d4cb51b}
+\begin{DoxyVerb}starting at seek_point read fft_size samples, and calculate the spectral centroid \end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_ac452f88cdd923fd42561d05d503e338b}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!audio\_\-file@{audio\_\-file}}
+\index{audio\_\-file@{audio\_\-file}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{audio\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::audio\_\-file}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_ac452f88cdd923fd42561d05d503e338b}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_adea4bc5175e7ef1a39f5fc04ea560d80}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!channels@{channels}}
+\index{channels@{channels}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{channels}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::channels}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_adea4bc5175e7ef1a39f5fc04ea560d80}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a564b093101aa472e53a23b9797ed8473}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!clip@{clip}}
+\index{clip@{clip}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{clip}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::clip}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a564b093101aa472e53a23b9797ed8473}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_abab70ccae8f197d91d34e78a01f4daf6}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!fft\_\-size@{fft\_\-size}}
+\index{fft\_\-size@{fft\_\-size}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{fft\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::fft\_\-size}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_abab70ccae8f197d91d34e78a01f4daf6}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_acfe9dae6f9c6f64f9d51859223304d74}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!frames@{frames}}
+\index{frames@{frames}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{frames}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::frames}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_acfe9dae6f9c6f64f9d51859223304d74}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a1bf522437d5692a917e972dab6f64a1f}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!higher@{higher}}
+\index{higher@{higher}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{higher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::higher}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a1bf522437d5692a917e972dab6f64a1f}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_aa3843ad42db5b06bde44aa040879c4b8}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!higher\_\-log@{higher\_\-log}}
+\index{higher\_\-log@{higher\_\-log}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{higher\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::higher\_\-log}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_aa3843ad42db5b06bde44aa040879c4b8}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a7d732e59d46bf8e9798f3aa200b9d982}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!lower@{lower}}
+\index{lower@{lower}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{lower}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::lower}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a7d732e59d46bf8e9798f3aa200b9d982}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a86583ba97dace9f23fc1104c7ea7d47a}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!lower\_\-log@{lower\_\-log}}
+\index{lower\_\-log@{lower\_\-log}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{lower\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::lower\_\-log}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a86583ba97dace9f23fc1104c7ea7d47a}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a3cc00456051b901ef1ad6f8702e4b49c}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!samplerate@{samplerate}}
+\index{samplerate@{samplerate}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{samplerate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::samplerate}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a3cc00456051b901ef1ad6f8702e4b49c}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a4df8c0c3183f8fec892735f8b673c58c}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!spectrum\_\-range@{spectrum\_\-range}}
+\index{spectrum\_\-range@{spectrum\_\-range}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{spectrum\_\-range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::spectrum\_\-range}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_a4df8c0c3183f8fec892735f8b673c58c}
+\hypertarget{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_adce38070119c56623dc9e9eeb95a6b44}{
+\index{concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}!window@{window}}
+\index{window@{window}!concertapp::audio::waveform::AudioProcessor@{concertapp::audio::waveform::AudioProcessor}}
+\subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::audio::waveform::AudioProcessor::window}}}
+\label{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor_adce38070119c56623dc9e9eeb95a6b44}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+concertapp/audio/\hyperlink{waveform_8py}{waveform.py}\end{DoxyCompactItemize}

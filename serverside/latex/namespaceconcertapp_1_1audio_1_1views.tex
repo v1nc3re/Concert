@@ -1,0 +1,64 @@
+\hypertarget{namespaceconcertapp_1_1audio_1_1views}{
+\section{concertapp::audio::views Namespace Reference}
+\label{namespaceconcertapp_1_1audio_1_1views}\index{concertapp::audio::views@{concertapp::audio::views}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceconcertapp_1_1audio_1_1views_a501d7d3c710d54fe093e09d068c283b3}{get\_\-upload\_\-progress}
+\begin{DoxyCompactList}\small\item\em Get the upload progress for a currently uploading file. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1audio_1_1views_a24f35e623dd81c48584629e3a7bd5dee}{upload\_\-id}
+\begin{DoxyCompactList}\small\item\em This controller returns a unique upload\_\-id for use in the cache, so the client side can keep track of upload progress. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1audio_1_1views_a15a969728d30d74d65b8e0feeb1f605e}{upload\_\-audio}
+\begin{DoxyCompactList}\small\item\em The upload\_\-audio page. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceconcertapp_1_1audio_1_1views_a501d7d3c710d54fe093e09d068c283b3}{
+\index{concertapp::audio::views@{concertapp::audio::views}!get\_\-upload\_\-progress@{get\_\-upload\_\-progress}}
+\index{get\_\-upload\_\-progress@{get\_\-upload\_\-progress}!concertapp::audio::views@{concertapp::audio::views}}
+\subsubsection[{get\_\-upload\_\-progress}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::views::get\_\-upload\_\-progress (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ upload\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1audio_1_1views_a501d7d3c710d54fe093e09d068c283b3}
+
+
+Get the upload progress for a currently uploading file. 
+
+If the result from the cache is null, it means the upload has completed. \hypertarget{namespaceconcertapp_1_1audio_1_1views_a15a969728d30d74d65b8e0feeb1f605e}{
+\index{concertapp::audio::views@{concertapp::audio::views}!upload\_\-audio@{upload\_\-audio}}
+\index{upload\_\-audio@{upload\_\-audio}!concertapp::audio::views@{concertapp::audio::views}}
+\subsubsection[{upload\_\-audio}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::views::upload\_\-audio (
+\begin{DoxyParamCaption}
+\item[{}]{ request}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1audio_1_1views_a15a969728d30d74d65b8e0feeb1f605e}
+
+
+The upload\_\-audio page. 
+
+User goes here to upload audio to a specific collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP Request \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceconcertapp_1_1audio_1_1views_a24f35e623dd81c48584629e3a7bd5dee}{
+\index{concertapp::audio::views@{concertapp::audio::views}!upload\_\-id@{upload\_\-id}}
+\index{upload\_\-id@{upload\_\-id}!concertapp::audio::views@{concertapp::audio::views}}
+\subsubsection[{upload\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::views::upload\_\-id (
+\begin{DoxyParamCaption}
+\item[{}]{ request}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1audio_1_1views_a24f35e623dd81c48584629e3a7bd5dee}
+
+
+This controller returns a unique upload\_\-id for use in the cache, so the client side can keep track of upload progress. 
+
+It also reserves that spot in the cache. 

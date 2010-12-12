@@ -1,0 +1,137 @@
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler}{
+\section{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler Class Reference}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler}\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+}
+
+
+Inherits django::core::files::uploadhandler::FileUploadHandler.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_aef2d4559cd94107f73445fa0addcc2ff}{\_\-\_\-init\_\-\_\-}
+\item 
+def \hyperlink{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a9fccf26819ca56c5a1da3d59e439c117}{handle\_\-raw\_\-input}
+\item 
+def \hyperlink{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a677fda07bfc856cb9d0a5423b0f242d1}{new\_\-file}
+\item 
+def \hyperlink{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a7d0b974220ad4b84ff31a4d49155ca66}{receive\_\-data\_\-chunk}
+\item 
+def \hyperlink{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a9b0e364f7645274d6457e03ca3490d96}{file\_\-complete}
+\item 
+def \hyperlink{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a57c1f5603337f3d88ba41b55b9790a88}{upload\_\-complete}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_ad70a21a38ac236c3046b8bf7c220564f}{progress\_\-id}
+\item 
+\hyperlink{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a30164153cc16e9fe99b8b9492e5b88e5}{cache\_\-key}
+\item 
+\hyperlink{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_ad8b731f5311dfdb314762e9485da6e17}{content\_\-length}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}
+Tracks progress for file uploads.
+The http post request must contain a header or query parameter, 'upload_id'
+which should contain a unique string to identify the upload to be tracked.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_aef2d4559cd94107f73445fa0addcc2ff}{
+\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ request = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_aef2d4559cd94107f73445fa0addcc2ff}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a9b0e364f7645274d6457e03ca3490d96}{
+\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}!file\_\-complete@{file\_\-complete}}
+\index{file\_\-complete@{file\_\-complete}!concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+\subsubsection[{file\_\-complete}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler::file\_\-complete (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ file\_\-size}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a9b0e364f7645274d6457e03ca3490d96}
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a9fccf26819ca56c5a1da3d59e439c117}{
+\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}!handle\_\-raw\_\-input@{handle\_\-raw\_\-input}}
+\index{handle\_\-raw\_\-input@{handle\_\-raw\_\-input}!concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+\subsubsection[{handle\_\-raw\_\-input}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler::handle\_\-raw\_\-input (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ input\_\-data, }
+\item[{}]{ META, }
+\item[{}]{ content\_\-length, }
+\item[{}]{ boundary, }
+\item[{}]{ encoding = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a9fccf26819ca56c5a1da3d59e439c117}
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a677fda07bfc856cb9d0a5423b0f242d1}{
+\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}!new\_\-file@{new\_\-file}}
+\index{new\_\-file@{new\_\-file}!concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+\subsubsection[{new\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler::new\_\-file (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ field\_\-name, }
+\item[{}]{ file\_\-name, }
+\item[{}]{ content\_\-type, }
+\item[{}]{ content\_\-length, }
+\item[{}]{ charset = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a677fda07bfc856cb9d0a5423b0f242d1}
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a7d0b974220ad4b84ff31a4d49155ca66}{
+\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}!receive\_\-data\_\-chunk@{receive\_\-data\_\-chunk}}
+\index{receive\_\-data\_\-chunk@{receive\_\-data\_\-chunk}!concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+\subsubsection[{receive\_\-data\_\-chunk}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler::receive\_\-data\_\-chunk (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ raw\_\-data, }
+\item[{}]{ start}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a7d0b974220ad4b84ff31a4d49155ca66}
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a57c1f5603337f3d88ba41b55b9790a88}{
+\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}!upload\_\-complete@{upload\_\-complete}}
+\index{upload\_\-complete@{upload\_\-complete}!concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+\subsubsection[{upload\_\-complete}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler::upload\_\-complete (
+\begin{DoxyParamCaption}
+\item[{}]{ self}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a57c1f5603337f3d88ba41b55b9790a88}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a30164153cc16e9fe99b8b9492e5b88e5}{
+\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}!cache\_\-key@{cache\_\-key}}
+\index{cache\_\-key@{cache\_\-key}!concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+\subsubsection[{cache\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler::cache\_\-key}}}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_a30164153cc16e9fe99b8b9492e5b88e5}
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_ad8b731f5311dfdb314762e9485da6e17}{
+\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}!content\_\-length@{content\_\-length}}
+\index{content\_\-length@{content\_\-length}!concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+\subsubsection[{content\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler::content\_\-length}}}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_ad8b731f5311dfdb314762e9485da6e17}
+\hypertarget{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_ad70a21a38ac236c3046b8bf7c220564f}{
+\index{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}!progress\_\-id@{progress\_\-id}}
+\index{progress\_\-id@{progress\_\-id}!concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler@{concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler}}
+\subsubsection[{progress\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf concertapp::uploadprogresscachedhandler::UploadProgressCachedHandler::progress\_\-id}}}
+\label{classconcertapp_1_1uploadprogresscachedhandler_1_1_upload_progress_cached_handler_ad70a21a38ac236c3046b8bf7c220564f}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+concertapp/\hyperlink{uploadprogresscachedhandler_8py}{uploadprogresscachedhandler.py}\end{DoxyCompactItemize}

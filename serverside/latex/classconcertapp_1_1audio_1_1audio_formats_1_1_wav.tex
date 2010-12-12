@@ -1,0 +1,244 @@
+\hypertarget{classconcertapp_1_1audio_1_1audio_formats_1_1_wav}{
+\section{concertapp::audio::audioFormats::Wav Class Reference}
+\label{classconcertapp_1_1audio_1_1audio_formats_1_1_wav}\index{concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}}
+}
+Inheritance diagram for concertapp::audio::audioFormats::Wav:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconcertapp_1_1audio_1_1audio_formats_1_1_wav}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_af183bfb8095b4110faacb78ce70853cf}{\_\-\_\-init\_\-\_\-}
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+def \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a12808c742367349b3525437d0cc9e163}{getLength}
+\begin{DoxyCompactList}\small\item\em Gets the length, in seconds, of a wave file. \item\end{DoxyCompactList}\item 
+def \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a23b265b5e1dbb2330a34941d322f43e8}{wavDecode}
+\begin{DoxyCompactList}\small\item\em Decodes a WAV file. \item\end{DoxyCompactList}\item 
+def \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_ac49ee70870aa8edaaa1f5d92a00c49a8}{wavEncode}
+\begin{DoxyCompactList}\small\item\em Encodes a file as WAV. \item\end{DoxyCompactList}\item 
+def \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_ac0f03f8bce385f632fd58f20e7bd1353}{crop}
+\begin{DoxyCompactList}\small\item\em Crops a WAV file to the given seconds. \item\end{DoxyCompactList}\item 
+def \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a878e3b1ace4a06bb1cc310c9731ff4ec}{generateWaveform}
+\begin{DoxyCompactList}\small\item\em Generates the waveform image from a WAV file. \item\end{DoxyCompactList}\item 
+def \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a5013f22fafb6870a9499ab9e8105cce1}{oggEncode}
+\begin{DoxyCompactList}\small\item\em Encode audio into OGG. \item\end{DoxyCompactList}\item 
+def \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a3ef564aa879f2353009ace843db2c94c}{mp3Encode}
+\begin{DoxyCompactList}\small\item\em Encode audio into MP3. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_af183bfb8095b4110faacb78ce70853cf}{
+\index{concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}!\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}}
+\index{\_\-\_\-init\_\-\_\-@{\_\-\_\-init\_\-\_\-}!concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}}
+\subsubsection[{\_\-\_\-init\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioFormats::Wav::\_\-\_\-init\_\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ inputFileName}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_af183bfb8095b4110faacb78ce70853cf}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & wav object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_audio_a2f1bf3bd10949316ccbdcb06853344d4}{concertapp::audio::audioFormats::Audio}.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_ac0f03f8bce385f632fd58f20e7bd1353}{
+\index{concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}!crop@{crop}}
+\index{crop@{crop}!concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}}
+\subsubsection[{crop}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioFormats::Wav::crop (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ outputFileName, }
+\item[{}]{ begin, }
+\item[{}]{ end}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_ac0f03f8bce385f632fd58f20e7bd1353}
+
+
+Crops a WAV file to the given seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em outputFileName} & The name of the WAV file to write the cropped data to \\
+\hline
+{\em begin} & The time, in seconds, to begin \\
+\hline
+{\em end} & The time, in seconds, to end\\
+\hline
+\end{DoxyParams}
+Extra details \hypertarget{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a878e3b1ace4a06bb1cc310c9731ff4ec}{
+\index{concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}!generateWaveform@{generateWaveform}}
+\index{generateWaveform@{generateWaveform}!concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}}
+\subsubsection[{generateWaveform}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioFormats::Wav::generateWaveform (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ imageName, }
+\item[{}]{ imageWidth, }
+\item[{}]{ imageHeight, }
+\item[{}]{ channels = {\ttfamily 0}, }
+\item[{}]{ fft\_\-size = {\ttfamily 2048}, }
+\item[{}]{ f\_\-max = {\ttfamily 22050}, }
+\item[{}]{ f\_\-min = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a878e3b1ace4a06bb1cc310c9731ff4ec}
+
+
+Generates the waveform image from a WAV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & \hyperlink{classconcertapp_1_1audio_1_1audio_formats_1_1_wav}{Wav} object \\
+\hline
+{\em imageName} & The name of the file to write to \\
+\hline
+{\em imageWidth} & Width of image in pixels \\
+\hline
+{\em imageHeight} & Height of image in pixels \\
+\hline
+{\em channels} & The number of channels to generate images for. 0 chooses all channels \\
+\hline
+{\em fft\_\-size} & Optional \\
+\hline
+{\em f\_\-max} & Optional \\
+\hline
+{\em f\_\-min} & Optional \\
+\hline
+\end{DoxyParams}
+\hypertarget{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a12808c742367349b3525437d0cc9e163}{
+\index{concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}!getLength@{getLength}}
+\index{getLength@{getLength}!concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}}
+\subsubsection[{getLength}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioFormats::Wav::getLength (
+\begin{DoxyParamCaption}
+\item[{}]{ self}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a12808c742367349b3525437d0cc9e163}
+
+
+Gets the length, in seconds, of a wave file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Class object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of seconds 
+\end{DoxyReturn}
+\hypertarget{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a3ef564aa879f2353009ace843db2c94c}{
+\index{concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}!mp3Encode@{mp3Encode}}
+\index{mp3Encode@{mp3Encode}!concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}}
+\subsubsection[{mp3Encode}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioFormats::Wav::mp3Encode (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ outputFileName, }
+\item[{}]{ quality = {\ttfamily 192}}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a3ef564aa879f2353009ace843db2c94c}
+
+
+Encode audio into MP3. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em outputFileName} & \\
+\hline
+{\em quality} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A subprocess object 
+\end{DoxyReturn}
+\hypertarget{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a5013f22fafb6870a9499ab9e8105cce1}{
+\index{concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}!oggEncode@{oggEncode}}
+\index{oggEncode@{oggEncode}!concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}}
+\subsubsection[{oggEncode}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioFormats::Wav::oggEncode (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ outputFileName, }
+\item[{}]{ quality = {\ttfamily 192}}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a5013f22fafb6870a9499ab9e8105cce1}
+
+
+Encode audio into OGG. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em outputFileName} & \\
+\hline
+{\em quality} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A subprocess object 
+\end{DoxyReturn}
+\hypertarget{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a23b265b5e1dbb2330a34941d322f43e8}{
+\index{concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}!wavDecode@{wavDecode}}
+\index{wavDecode@{wavDecode}!concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}}
+\subsubsection[{wavDecode}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioFormats::Wav::wavDecode (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ outputFileName}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_a23b265b5e1dbb2330a34941d322f43e8}
+
+
+Decodes a WAV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em outputFileName} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_ac49ee70870aa8edaaa1f5d92a00c49a8}{
+\index{concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}!wavEncode@{wavEncode}}
+\index{wavEncode@{wavEncode}!concertapp::audio::audioFormats::Wav@{concertapp::audio::audioFormats::Wav}}
+\subsubsection[{wavEncode}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioFormats::Wav::wavEncode (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ outputFileName}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1audio_1_1audio_formats_1_1_wav_ac49ee70870aa8edaaa1f5d92a00c49a8}
+
+
+Encodes a file as WAV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & \\
+\hline
+{\em outputFileName} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+concertapp/audio/\hyperlink{audio_formats_8py}{audioFormats.py}\end{DoxyCompactItemize}

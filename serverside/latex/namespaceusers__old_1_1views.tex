@@ -1,0 +1,364 @@
+\hypertarget{namespaceusers__old_1_1views}{
+\section{users\_\-old::views Namespace Reference}
+\label{namespaceusers__old_1_1views}\index{users\_\-old::views@{users\_\-old::views}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceusers__old_1_1views_a0184aeafdf217bc01ec3cc0dd53fe68d}{create\_\-user}
+\begin{DoxyCompactList}\small\item\em Creates a user in the system. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_a2ed4de357e1863e92c8e6c6f52c1c682}{change\_\-password}
+\begin{DoxyCompactList}\small\item\em Changes the current user's password. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_aacc31f077d06f29d3a04ed7da358b9fa}{groups}
+\begin{DoxyCompactList}\small\item\em Gets all of the groups of the user. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_ad7ec072dbeaf02386314b35a401a0fe5}{choose\_\-group}
+\begin{DoxyCompactList}\small\item\em Choose a group to manage. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_a3ed6754701029b577ea0b7694e2141bc}{accept\_\-request}
+\begin{DoxyCompactList}\small\item\em Accepts another user's request to join a group. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_aee85f99cc110af98f3e7e0e7eb1c3570}{manage\_\-group}
+\begin{DoxyCompactList}\small\item\em Manage the selected group. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_acbbdd835fb0ec6b3b554c9d3423d062f}{remove\_\-user}
+\begin{DoxyCompactList}\small\item\em Choose a user to remove from the group. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_a84c2e651524e305ce1792520fc08c6b2}{remove}
+\begin{DoxyCompactList}\small\item\em Verification page to remove a user from a group. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_a7776f02a7976e4dfdc09e04a10dac96e}{remove\_\-from\_\-group}
+\begin{DoxyCompactList}\small\item\em Remove the user from the desired group. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_a37152578db6349f34e99dc2aeb81eb05}{delete\_\-confirm}
+\begin{DoxyCompactList}\small\item\em Confirmation page to delete a group. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_a10b04a5e1fa87a5718d9cabd0d3aab53}{delete}
+\begin{DoxyCompactList}\small\item\em Delete the actual group. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_af36c203d4d8142380b4839875d6dea8d}{pending\_\-requests}
+\begin{DoxyCompactList}\small\item\em List out all of the pending requests to join a group. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_a83a54c1f2d9d76581790a766fd8fe5ec}{add\_\-to\_\-group}
+\begin{DoxyCompactList}\small\item\em Add a user to the group. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceusers__old_1_1views_a2406bb653b12a010971b049bdd9722e3}{user\_\-group\_\-select}
+\begin{DoxyCompactList}\small\item\em Return the groups associated with a given user, excluding that user's default group. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceusers__old_1_1views_a3ed6754701029b577ea0b7694e2141bc}{
+\index{users\_\-old::views@{users\_\-old::views}!accept\_\-request@{accept\_\-request}}
+\index{accept\_\-request@{accept\_\-request}!users_old::views@{users\_\-old::views}}
+\subsubsection[{accept\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::accept\_\-request (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id, }
+\item[{}]{ group\_\-id, }
+\item[{}]{ new\_\-user\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_a3ed6754701029b577ea0b7694e2141bc}
+
+
+Accepts another user's request to join a group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the user \\
+\hline
+{\em group\_\-id} & The id of the group \\
+\hline
+{\em new\_\-user\_\-id} & The id of the user joining the group \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_a83a54c1f2d9d76581790a766fd8fe5ec}{
+\index{users\_\-old::views@{users\_\-old::views}!add\_\-to\_\-group@{add\_\-to\_\-group}}
+\index{add\_\-to\_\-group@{add\_\-to\_\-group}!users_old::views@{users\_\-old::views}}
+\subsubsection[{add\_\-to\_\-group}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::add\_\-to\_\-group (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id, }
+\item[{}]{ group\_\-id, }
+\item[{}]{ new\_\-user\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_a83a54c1f2d9d76581790a766fd8fe5ec}
+
+
+Add a user to the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the current user \\
+\hline
+{\em group\_\-id} & The id of the current group \\
+\hline
+{\em new\_\-user\_\-id} & The id of the user to add to the group \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_a2ed4de357e1863e92c8e6c6f52c1c682}{
+\index{users\_\-old::views@{users\_\-old::views}!change\_\-password@{change\_\-password}}
+\index{change\_\-password@{change\_\-password}!users_old::views@{users\_\-old::views}}
+\subsubsection[{change\_\-password}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::change\_\-password (
+\begin{DoxyParamCaption}
+\item[{}]{ request}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_a2ed4de357e1863e92c8e6c6f52c1c682}
+
+
+Changes the current user's password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_ad7ec072dbeaf02386314b35a401a0fe5}{
+\index{users\_\-old::views@{users\_\-old::views}!choose\_\-group@{choose\_\-group}}
+\index{choose\_\-group@{choose\_\-group}!users_old::views@{users\_\-old::views}}
+\subsubsection[{choose\_\-group}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::choose\_\-group (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_ad7ec072dbeaf02386314b35a401a0fe5}
+
+
+Choose a group to manage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_a0184aeafdf217bc01ec3cc0dd53fe68d}{
+\index{users\_\-old::views@{users\_\-old::views}!create\_\-user@{create\_\-user}}
+\index{create\_\-user@{create\_\-user}!users_old::views@{users\_\-old::views}}
+\subsubsection[{create\_\-user}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::create\_\-user (
+\begin{DoxyParamCaption}
+\item[{}]{ request}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_a0184aeafdf217bc01ec3cc0dd53fe68d}
+
+
+Creates a user in the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_a10b04a5e1fa87a5718d9cabd0d3aab53}{
+\index{users\_\-old::views@{users\_\-old::views}!delete@{delete}}
+\index{delete@{delete}!users_old::views@{users\_\-old::views}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::delete (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id, }
+\item[{}]{ group\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_a10b04a5e1fa87a5718d9cabd0d3aab53}
+
+
+Delete the actual group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the current user \\
+\hline
+{\em group\_\-id} & The id of the group to delete \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_a37152578db6349f34e99dc2aeb81eb05}{
+\index{users\_\-old::views@{users\_\-old::views}!delete\_\-confirm@{delete\_\-confirm}}
+\index{delete\_\-confirm@{delete\_\-confirm}!users_old::views@{users\_\-old::views}}
+\subsubsection[{delete\_\-confirm}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::delete\_\-confirm (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id, }
+\item[{}]{ group\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_a37152578db6349f34e99dc2aeb81eb05}
+
+
+Confirmation page to delete a group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the current user \\
+\hline
+{\em group\_\-id} & The id of the group to delete \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_aacc31f077d06f29d3a04ed7da358b9fa}{
+\index{users\_\-old::views@{users\_\-old::views}!groups@{groups}}
+\index{groups@{groups}!users_old::views@{users\_\-old::views}}
+\subsubsection[{groups}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::groups (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_aacc31f077d06f29d3a04ed7da358b9fa}
+
+
+Gets all of the groups of the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the current user \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_aee85f99cc110af98f3e7e0e7eb1c3570}{
+\index{users\_\-old::views@{users\_\-old::views}!manage\_\-group@{manage\_\-group}}
+\index{manage\_\-group@{manage\_\-group}!users_old::views@{users\_\-old::views}}
+\subsubsection[{manage\_\-group}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::manage\_\-group (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id, }
+\item[{}]{ group\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_aee85f99cc110af98f3e7e0e7eb1c3570}
+
+
+Manage the selected group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the user \\
+\hline
+{\em group\_\-id} & The id of the group \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_af36c203d4d8142380b4839875d6dea8d}{
+\index{users\_\-old::views@{users\_\-old::views}!pending\_\-requests@{pending\_\-requests}}
+\index{pending\_\-requests@{pending\_\-requests}!users_old::views@{users\_\-old::views}}
+\subsubsection[{pending\_\-requests}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::pending\_\-requests (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id, }
+\item[{}]{ group\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_af36c203d4d8142380b4839875d6dea8d}
+
+
+List out all of the pending requests to join a group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the current user \\
+\hline
+{\em group\_\-id} & The id of the group \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_a84c2e651524e305ce1792520fc08c6b2}{
+\index{users\_\-old::views@{users\_\-old::views}!remove@{remove}}
+\index{remove@{remove}!users_old::views@{users\_\-old::views}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::remove (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id, }
+\item[{}]{ group\_\-name, }
+\item[{}]{ g\_\-user\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_a84c2e651524e305ce1792520fc08c6b2}
+
+
+Verification page to remove a user from a group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the logged in user \\
+\hline
+{\em group\_\-name} & The name of the group \\
+\hline
+{\em g\_\-user\_\-id} & The user to remove from the group \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_a7776f02a7976e4dfdc09e04a10dac96e}{
+\index{users\_\-old::views@{users\_\-old::views}!remove\_\-from\_\-group@{remove\_\-from\_\-group}}
+\index{remove\_\-from\_\-group@{remove\_\-from\_\-group}!users_old::views@{users\_\-old::views}}
+\subsubsection[{remove\_\-from\_\-group}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::remove\_\-from\_\-group (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id, }
+\item[{}]{ group\_\-id, }
+\item[{}]{ g\_\-user\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_a7776f02a7976e4dfdc09e04a10dac96e}
+
+
+Remove the user from the desired group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the logged in user \\
+\hline
+{\em group\_\-id} & The id of the group \\
+\hline
+{\em g\_\-user\_\-id} & The user to remove from the group \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_acbbdd835fb0ec6b3b554c9d3423d062f}{
+\index{users\_\-old::views@{users\_\-old::views}!remove\_\-user@{remove\_\-user}}
+\index{remove\_\-user@{remove\_\-user}!users_old::views@{users\_\-old::views}}
+\subsubsection[{remove\_\-user}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::remove\_\-user (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ user\_\-id, }
+\item[{}]{ group\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_acbbdd835fb0ec6b3b554c9d3423d062f}
+
+
+Choose a user to remove from the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+{\em user\_\-id} & The id of the logged in user \\
+\hline
+{\em group\_\-id} & The id of the group being managed \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceusers__old_1_1views_a2406bb653b12a010971b049bdd9722e3}{
+\index{users\_\-old::views@{users\_\-old::views}!user\_\-group\_\-select@{user\_\-group\_\-select}}
+\index{user\_\-group\_\-select@{user\_\-group\_\-select}!users_old::views@{users\_\-old::views}}
+\subsubsection[{user\_\-group\_\-select}]{\setlength{\rightskip}{0pt plus 5cm}def users\_\-old::views::user\_\-group\_\-select (
+\begin{DoxyParamCaption}
+\item[{}]{ request}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceusers__old_1_1views_a2406bb653b12a010971b049bdd9722e3}
+
+
+Return the groups associated with a given user, excluding that user's default group. 
+
+This will be used to generate a select box so the user can add a segment to a group.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & HTTP request \\
+\hline
+\end{DoxyParams}

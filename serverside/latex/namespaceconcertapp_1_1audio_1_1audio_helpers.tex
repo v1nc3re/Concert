@@ -1,0 +1,125 @@
+\hypertarget{namespaceconcertapp_1_1audio_1_1audio_helpers}{
+\section{concertapp::audio::audioHelpers Namespace Reference}
+\label{namespaceconcertapp_1_1audio_1_1audio_helpers}\index{concertapp::audio::audioHelpers@{concertapp::audio::audioHelpers}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceconcertapp_1_1audio_1_1audio_helpers_a41106d2ec8af872b5eaa13c546f40430}{toNormalizedWav}
+\begin{DoxyCompactList}\small\item\em Takes as input a file of any format, and creates a wav file in the desired format, making sure to throw errors along the way. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1audio_1_1audio_helpers_aeb4a6eae1fd0c00b447ae16e5c1eb2b4}{toOgg}
+\begin{DoxyCompactList}\small\item\em Takes as input an audio file of any format, and creates an ogg file at the specified location. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1audio_1_1audio_helpers_a98a8069b5f2ace8b649176c48a44768d}{toMp3}
+\begin{DoxyCompactList}\small\item\em Takes as input an audio file of any format, and creates an \hyperlink{classmp3}{mp3} file at the specified location. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespaceconcertapp_1_1audio_1_1audio_helpers_a201ef15ed1aaddff61c6c28a212e330d}{NEW\_\-FILE\_\-PERMISSIONS} = 0755
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceconcertapp_1_1audio_1_1audio_helpers_a98a8069b5f2ace8b649176c48a44768d}{
+\index{concertapp::audio::audioHelpers@{concertapp::audio::audioHelpers}!toMp3@{toMp3}}
+\index{toMp3@{toMp3}!concertapp::audio::audioHelpers@{concertapp::audio::audioHelpers}}
+\subsubsection[{toMp3}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioHelpers::toMp3 (
+\begin{DoxyParamCaption}
+\item[{}]{ inputFilePath, }
+\item[{}]{ outputFilePath}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1audio_1_1audio_helpers_a98a8069b5f2ace8b649176c48a44768d}
+
+
+Takes as input an audio file of any format, and creates an \hyperlink{classmp3}{mp3} file at the specified location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputFilePath} & String The path to the input audio file (any format) \\
+\hline
+{\em outputFilePath} & String The path to the output audio file (should end in .\hyperlink{classmp3}{mp3})\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em audiotools.UnsupportedFile} & If input filetype is not supported \\
+\hline
+{\em IOError} & If input file cannot be opened \\
+\hline
+{\em audiotools.EncodingError} & Problems during encoding to PCM or \hyperlink{classmp3}{mp3} \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespaceconcertapp_1_1audio_1_1audio_helpers_a41106d2ec8af872b5eaa13c546f40430}{
+\index{concertapp::audio::audioHelpers@{concertapp::audio::audioHelpers}!toNormalizedWav@{toNormalizedWav}}
+\index{toNormalizedWav@{toNormalizedWav}!concertapp::audio::audioHelpers@{concertapp::audio::audioHelpers}}
+\subsubsection[{toNormalizedWav}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioHelpers::toNormalizedWav (
+\begin{DoxyParamCaption}
+\item[{}]{ inputFilePath, }
+\item[{}]{ outputFilePath}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1audio_1_1audio_helpers_a41106d2ec8af872b5eaa13c546f40430}
+
+
+Takes as input a file of any format, and creates a wav file in the desired format, making sure to throw errors along the way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputFilePath} & String The path of an audio file (any format) \\
+\hline
+{\em outputFilePath} & String The path to the file to output to (including .wav)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em audiotools.UnsupportedFile} & -\/ if filetype is unsupported \\
+\hline
+{\em IOError} & -\/ if there was a problem opening \\
+\hline
+{\em audiotools.PCMReaderError} & -\/ if there was an error decoding \\
+\hline
+{\em Exception} & -\/ unsupported audio channel config \\
+\hline
+{\em Exception} & -\/ unsupported bit-\/depth \\
+\hline
+{\em audiotools.EncodingError} & -\/ encoding error \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{namespaceconcertapp_1_1audio_1_1audio_helpers_aeb4a6eae1fd0c00b447ae16e5c1eb2b4}{
+\index{concertapp::audio::audioHelpers@{concertapp::audio::audioHelpers}!toOgg@{toOgg}}
+\index{toOgg@{toOgg}!concertapp::audio::audioHelpers@{concertapp::audio::audioHelpers}}
+\subsubsection[{toOgg}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::audioHelpers::toOgg (
+\begin{DoxyParamCaption}
+\item[{}]{ inputFilePath, }
+\item[{}]{ outputFilePath}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1audio_1_1audio_helpers_aeb4a6eae1fd0c00b447ae16e5c1eb2b4}
+
+
+Takes as input an audio file of any format, and creates an ogg file at the specified location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputFilePath} & String The path to the input audio file (any format) \\
+\hline
+{\em outputFilePath} & String The path to the output audio file (should end in .ogg)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em audiotools.UnsupportedFile} & If input filetype is not supported \\
+\hline
+{\em IOError} & If input file cannot be opened \\
+\hline
+{\em audiotools.EncodingError} & Problems during encoding to PCM or ogg \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceconcertapp_1_1audio_1_1audio_helpers_a201ef15ed1aaddff61c6c28a212e330d}{
+\index{concertapp::audio::audioHelpers@{concertapp::audio::audioHelpers}!NEW\_\-FILE\_\-PERMISSIONS@{NEW\_\-FILE\_\-PERMISSIONS}}
+\index{NEW\_\-FILE\_\-PERMISSIONS@{NEW\_\-FILE\_\-PERMISSIONS}!concertapp::audio::audioHelpers@{concertapp::audio::audioHelpers}}
+\subsubsection[{NEW\_\-FILE\_\-PERMISSIONS}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf concertapp::audio::audioHelpers::NEW\_\-FILE\_\-PERMISSIONS} = 0755}}
+\label{namespaceconcertapp_1_1audio_1_1audio_helpers_a201ef15ed1aaddff61c6c28a212e330d}

@@ -1,0 +1,184 @@
+\hypertarget{namespaceconcertapp_1_1collection_1_1views}{
+\section{concertapp::collection::views Namespace Reference}
+\label{namespaceconcertapp_1_1collection_1_1views}\index{concertapp::collection::views@{concertapp::collection::views}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_a2f4c7bb502908e582ab456e2b0bd97cc}{manage\_\-collections}
+\begin{DoxyCompactList}\small\item\em The manage\_\-collections page, shows what facebook friends have collections, and allows you to request to join their collection. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_a3bbebfa032e3f8fe3b3e78054312b0af}{search\_\-collections}
+\begin{DoxyCompactList}\small\item\em An ajax request that returns a JSON object of collection names and ids. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_a9091899096b56e32b6687cc64f371dfb}{create\_\-collection}
+\begin{DoxyCompactList}\small\item\em Create a collection. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_a20f066a4de4aed16d1794cd102801cd8}{delete\_\-collection}
+\begin{DoxyCompactList}\small\item\em Delete a collection. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_aa83dd8eae86db95f0df851d648c9ae56}{user\_\-collections}
+\begin{DoxyCompactList}\small\item\em Retrieve a JSON list of the collections this user is associated with. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_ab159179c53d7c8d4ede8e892fbbb09ff}{collection\_\-info}
+\begin{DoxyCompactList}\small\item\em Retrieve a JSON object of the info associated with a collection. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_a89bfd4da3d6583408a8a283f39dbee67}{join\_\-collection}
+\begin{DoxyCompactList}\small\item\em User sends a collection join request. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_a278d3a9f377b8a2befe804cba14e4886}{revoke\_\-request}
+\begin{DoxyCompactList}\small\item\em User decides to revoke join request. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_aa4871b25ad87d71efe40a25a4a71c496}{deny\_\-request}
+\begin{DoxyCompactList}\small\item\em Administrator denies a join request. \item\end{DoxyCompactList}\item 
+def \hyperlink{namespaceconcertapp_1_1collection_1_1views_a7cdb4e6cd1a9755c91404c56e52401d5}{approve\_\-request}
+\begin{DoxyCompactList}\small\item\em Administrator approves a join request. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceconcertapp_1_1collection_1_1views_a7cdb4e6cd1a9755c91404c56e52401d5}{
+\index{concertapp::collection::views@{concertapp::collection::views}!approve\_\-request@{approve\_\-request}}
+\index{approve\_\-request@{approve\_\-request}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{approve\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::approve\_\-request (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ collection\_\-id, }
+\item[{}]{ user\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_a7cdb4e6cd1a9755c91404c56e52401d5}
+
+
+Administrator approves a join request. 
+
+\hypertarget{namespaceconcertapp_1_1collection_1_1views_ab159179c53d7c8d4ede8e892fbbb09ff}{
+\index{concertapp::collection::views@{concertapp::collection::views}!collection\_\-info@{collection\_\-info}}
+\index{collection\_\-info@{collection\_\-info}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{collection\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::collection\_\-info (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ collection\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_ab159179c53d7c8d4ede8e892fbbb09ff}
+
+
+Retrieve a JSON object of the info associated with a collection. 
+
+\hypertarget{namespaceconcertapp_1_1collection_1_1views_a9091899096b56e32b6687cc64f371dfb}{
+\index{concertapp::collection::views@{concertapp::collection::views}!create\_\-collection@{create\_\-collection}}
+\index{create\_\-collection@{create\_\-collection}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{create\_\-collection}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::create\_\-collection (
+\begin{DoxyParamCaption}
+\item[{}]{ request}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_a9091899096b56e32b6687cc64f371dfb}
+
+
+Create a collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request.POST\mbox{[}'name'\mbox{]}} & String -\/ The name of the new collection. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceconcertapp_1_1collection_1_1views_a20f066a4de4aed16d1794cd102801cd8}{
+\index{concertapp::collection::views@{concertapp::collection::views}!delete\_\-collection@{delete\_\-collection}}
+\index{delete\_\-collection@{delete\_\-collection}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{delete\_\-collection}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::delete\_\-collection (
+\begin{DoxyParamCaption}
+\item[{}]{ request}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_a20f066a4de4aed16d1794cd102801cd8}
+
+
+Delete a collection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request.POST\mbox{[}'id'\mbox{]}} & String -\/ The id of the collection to delete. \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceconcertapp_1_1collection_1_1views_aa4871b25ad87d71efe40a25a4a71c496}{
+\index{concertapp::collection::views@{concertapp::collection::views}!deny\_\-request@{deny\_\-request}}
+\index{deny\_\-request@{deny\_\-request}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{deny\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::deny\_\-request (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ collection\_\-id, }
+\item[{}]{ user\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_aa4871b25ad87d71efe40a25a4a71c496}
+
+
+Administrator denies a join request. 
+
+This is different than revoke\_\-request because request.user must be the administrator of the group. \hypertarget{namespaceconcertapp_1_1collection_1_1views_a89bfd4da3d6583408a8a283f39dbee67}{
+\index{concertapp::collection::views@{concertapp::collection::views}!join\_\-collection@{join\_\-collection}}
+\index{join\_\-collection@{join\_\-collection}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{join\_\-collection}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::join\_\-collection (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ collection\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_a89bfd4da3d6583408a8a283f39dbee67}
+
+
+User sends a collection join request. 
+
+\hypertarget{namespaceconcertapp_1_1collection_1_1views_a2f4c7bb502908e582ab456e2b0bd97cc}{
+\index{concertapp::collection::views@{concertapp::collection::views}!manage\_\-collections@{manage\_\-collections}}
+\index{manage\_\-collections@{manage\_\-collections}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{manage\_\-collections}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::manage\_\-collections (
+\begin{DoxyParamCaption}
+\item[{}]{ request}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_a2f4c7bb502908e582ab456e2b0bd97cc}
+
+
+The manage\_\-collections page, shows what facebook friends have collections, and allows you to request to join their collection. 
+
+Also has options for creating a collection and inviting your facebook friends to join it. \hypertarget{namespaceconcertapp_1_1collection_1_1views_a278d3a9f377b8a2befe804cba14e4886}{
+\index{concertapp::collection::views@{concertapp::collection::views}!revoke\_\-request@{revoke\_\-request}}
+\index{revoke\_\-request@{revoke\_\-request}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{revoke\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::revoke\_\-request (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ collection\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_a278d3a9f377b8a2befe804cba14e4886}
+
+
+User decides to revoke join request. 
+
+\hypertarget{namespaceconcertapp_1_1collection_1_1views_a3bbebfa032e3f8fe3b3e78054312b0af}{
+\index{concertapp::collection::views@{concertapp::collection::views}!search\_\-collections@{search\_\-collections}}
+\index{search\_\-collections@{search\_\-collections}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{search\_\-collections}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::search\_\-collections (
+\begin{DoxyParamCaption}
+\item[{}]{ request, }
+\item[{}]{ query}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_a3bbebfa032e3f8fe3b3e78054312b0af}
+
+
+An ajax request that returns a JSON object of collection names and ids. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & String -\/ the search query \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespaceconcertapp_1_1collection_1_1views_aa83dd8eae86db95f0df851d648c9ae56}{
+\index{concertapp::collection::views@{concertapp::collection::views}!user\_\-collections@{user\_\-collections}}
+\index{user\_\-collections@{user\_\-collections}!concertapp::collection::views@{concertapp::collection::views}}
+\subsubsection[{user\_\-collections}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::collection::views::user\_\-collections (
+\begin{DoxyParamCaption}
+\item[{}]{ request}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1collection_1_1views_aa83dd8eae86db95f0df851d648c9ae56}
+
+
+Retrieve a JSON list of the collections this user is associated with. 
+
+This is used on the \char`\"{}Manage Collections\char`\"{} panel. 

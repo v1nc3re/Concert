@@ -1,0 +1,145 @@
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment}{
+\section{concertapp::models::AudioSegment Class Reference}
+\label{classconcertapp_1_1models_1_1_audio_segment}\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconcertapp_1_1models_1_1_audio_segment_affce2977202c54a2f7dee0ad96c62a7b}{init}
+\item 
+def \hyperlink{classconcertapp_1_1models_1_1_audio_segment_aad0077a4bb5abe5461037617ba0d5857}{resegment}
+\item 
+def \hyperlink{classconcertapp_1_1models_1_1_audio_segment_a0b1e1827fb85d4c9e11348a1dda0e526}{resegment\_\-and\_\-tag}
+\item 
+def \hyperlink{classconcertapp_1_1models_1_1_audio_segment_abf1ed6643134cc1ead4c3c8f726cb184}{tag}
+\item 
+def \hyperlink{classconcertapp_1_1models_1_1_audio_segment_a1016f30c28fcbac733b8772dd942fc0e}{untag}
+\item 
+def \hyperlink{classconcertapp_1_1models_1_1_audio_segment_afa83f9b5a6de4e43f8a9b49e2513c94f}{tag\_\-list}
+\item 
+def \hyperlink{classconcertapp_1_1models_1_1_audio_segment_a63ff6ec5e4bb223ad797e26e2df6f070}{delete}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classconcertapp_1_1models_1_1_audio_segment_acb5c961694a3f5256efc69dcf0611a5b}{name} = models.CharField(max\_\-length = 100)
+\item 
+tuple \hyperlink{classconcertapp_1_1models_1_1_audio_segment_ae570405a871fbb22dd5b0ed90b719beb}{beginning} = models.DecimalField(max\_\-digits = 10, decimal\_\-places = 2)
+\item 
+tuple \hyperlink{classconcertapp_1_1models_1_1_audio_segment_ad57bff6ba4812881057215a7b31d452c}{end} = models.DecimalField(max\_\-digits = 10, decimal\_\-places = 2)
+\item 
+tuple \hyperlink{classconcertapp_1_1models_1_1_audio_segment_a5f742ddad4cd9d714aac17a770eab421}{audio} = models.ForeignKey('\hyperlink{classconcertapp_1_1models_1_1_audio}{Audio}')
+\item 
+tuple \hyperlink{classconcertapp_1_1models_1_1_audio_segment_af4c1782a5b5ea04fbb5605b78f81495a}{creator} = models.ForeignKey(User)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_a63ff6ec5e4bb223ad797e26e2df6f070}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!delete@{delete}}
+\index{delete@{delete}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::models::AudioSegment::delete (
+\begin{DoxyParamCaption}
+\item[{}]{ self}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1models_1_1_audio_segment_a63ff6ec5e4bb223ad797e26e2df6f070}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_affce2977202c54a2f7dee0ad96c62a7b}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!init@{init}}
+\index{init@{init}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::models::AudioSegment::init (
+\begin{DoxyParamCaption}
+\item[{}]{ self}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1models_1_1_audio_segment_affce2977202c54a2f7dee0ad96c62a7b}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_aad0077a4bb5abe5461037617ba0d5857}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!resegment@{resegment}}
+\index{resegment@{resegment}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{resegment}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::models::AudioSegment::resegment (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ name, }
+\item[{}]{ beginning, }
+\item[{}]{ end, }
+\item[{}]{ user}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1models_1_1_audio_segment_aad0077a4bb5abe5461037617ba0d5857}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_a0b1e1827fb85d4c9e11348a1dda0e526}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!resegment\_\-and\_\-tag@{resegment\_\-and\_\-tag}}
+\index{resegment\_\-and\_\-tag@{resegment\_\-and\_\-tag}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{resegment\_\-and\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::models::AudioSegment::resegment\_\-and\_\-tag (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ seg\_\-name, }
+\item[{}]{ beggining, }
+\item[{}]{ end, }
+\item[{}]{ tag\_\-name, }
+\item[{}]{ user}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1models_1_1_audio_segment_a0b1e1827fb85d4c9e11348a1dda0e526}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_abf1ed6643134cc1ead4c3c8f726cb184}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!tag@{tag}}
+\index{tag@{tag}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{tag}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::models::AudioSegment::tag (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ tag\_\-name, }
+\item[{}]{ user}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1models_1_1_audio_segment_abf1ed6643134cc1ead4c3c8f726cb184}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_afa83f9b5a6de4e43f8a9b49e2513c94f}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!tag\_\-list@{tag\_\-list}}
+\index{tag\_\-list@{tag\_\-list}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{tag\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::models::AudioSegment::tag\_\-list (
+\begin{DoxyParamCaption}
+\item[{}]{ self}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1models_1_1_audio_segment_afa83f9b5a6de4e43f8a9b49e2513c94f}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_a1016f30c28fcbac733b8772dd942fc0e}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!untag@{untag}}
+\index{untag@{untag}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{untag}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::models::AudioSegment::untag (
+\begin{DoxyParamCaption}
+\item[{}]{ self, }
+\item[{}]{ tag}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1models_1_1_audio_segment_a1016f30c28fcbac733b8772dd942fc0e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_a5f742ddad4cd9d714aac17a770eab421}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!audio@{audio}}
+\index{audio@{audio}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{audio}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::models::AudioSegment::audio} = models.ForeignKey('{\bf Audio}')\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1models_1_1_audio_segment_a5f742ddad4cd9d714aac17a770eab421}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_ae570405a871fbb22dd5b0ed90b719beb}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!beginning@{beginning}}
+\index{beginning@{beginning}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{beginning}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::models::AudioSegment::beginning} = models.DecimalField(max\_\-digits = 10, decimal\_\-places = 2)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1models_1_1_audio_segment_ae570405a871fbb22dd5b0ed90b719beb}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_af4c1782a5b5ea04fbb5605b78f81495a}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!creator@{creator}}
+\index{creator@{creator}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{creator}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::models::AudioSegment::creator} = models.ForeignKey(User)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1models_1_1_audio_segment_af4c1782a5b5ea04fbb5605b78f81495a}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_ad57bff6ba4812881057215a7b31d452c}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!end@{end}}
+\index{end@{end}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::models::AudioSegment::end} = models.DecimalField(max\_\-digits = 10, decimal\_\-places = 2)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1models_1_1_audio_segment_ad57bff6ba4812881057215a7b31d452c}
+\hypertarget{classconcertapp_1_1models_1_1_audio_segment_acb5c961694a3f5256efc69dcf0611a5b}{
+\index{concertapp::models::AudioSegment@{concertapp::models::AudioSegment}!name@{name}}
+\index{name@{name}!concertapp::models::AudioSegment@{concertapp::models::AudioSegment}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::models::AudioSegment::name} = models.CharField(max\_\-length = 100)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1models_1_1_audio_segment_acb5c961694a3f5256efc69dcf0611a5b}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+concertapp/\hyperlink{models_8py}{models.py}\end{DoxyCompactItemize}

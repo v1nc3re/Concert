@@ -1,0 +1,83 @@
+\hypertarget{namespaceconcertapp_1_1audio_1_1waveform}{
+\section{concertapp::audio::waveform Namespace Reference}
+\label{namespaceconcertapp_1_1audio_1_1waveform}\index{concertapp::audio::waveform@{concertapp::audio::waveform}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_audio_processor}{AudioProcessor}
+\item 
+class \hyperlink{classconcertapp_1_1audio_1_1waveform_1_1_waveform_image}{WaveformImage}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceconcertapp_1_1audio_1_1waveform_a6523a6c108b5e8711ad774d20439c9f4}{interpolate\_\-colors}
+\item 
+def \hyperlink{namespaceconcertapp_1_1audio_1_1waveform_a6c6244591b735c45a7fd25d1b8169ce1}{create\_\-png}
+\begin{DoxyCompactList}\small\item\em Actual driver function for creating the waveform image. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespaceconcertapp_1_1audio_1_1waveform_a02aa23f6042070992773f1489e2f888b}{parser} = optparse.OptionParser(\char`\"{}usage: \%prog \mbox{[}options\mbox{]} input-\/filename\char`\"{}, conflict\_\-handler=\char`\"{}resolve\char`\"{})
+\item 
+string \hyperlink{namespaceconcertapp_1_1audio_1_1waveform_a92ef9ae366b0cdb6411aa777bed829f4}{output\_\-file\_\-w} = \char`\"{}.png\char`\"{}
+\item 
+tuple \hyperlink{namespaceconcertapp_1_1audio_1_1waveform_a1e362a69de95f23ed1e9f30988ed1ed0}{args} = (input\_\-file, \hyperlink{namespaceconcertapp_1_1audio_1_1waveform_a92ef9ae366b0cdb6411aa777bed829f4}{output\_\-file\_\-w}, options.image\_\-width, options.image\_\-height, channels, options.fft\_\-size, options.f\_\-max, options.f\_\-min)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceconcertapp_1_1audio_1_1waveform_a6c6244591b735c45a7fd25d1b8169ce1}{
+\index{concertapp::audio::waveform@{concertapp::audio::waveform}!create\_\-png@{create\_\-png}}
+\index{create\_\-png@{create\_\-png}!concertapp::audio::waveform@{concertapp::audio::waveform}}
+\subsubsection[{create\_\-png}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::waveform::create\_\-png (
+\begin{DoxyParamCaption}
+\item[{}]{ input\_\-filename, }
+\item[{}]{ output\_\-filename\_\-w, }
+\item[{}]{ image\_\-width, }
+\item[{}]{ image\_\-height, }
+\item[{}]{ channels, }
+\item[{}]{ fft\_\-size, }
+\item[{}]{ f\_\-max, }
+\item[{}]{ f\_\-min}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1audio_1_1waveform_a6c6244591b735c45a7fd25d1b8169ce1}
+
+
+Actual driver function for creating the waveform image. 
+
+\hypertarget{namespaceconcertapp_1_1audio_1_1waveform_a6523a6c108b5e8711ad774d20439c9f4}{
+\index{concertapp::audio::waveform@{concertapp::audio::waveform}!interpolate\_\-colors@{interpolate\_\-colors}}
+\index{interpolate\_\-colors@{interpolate\_\-colors}!concertapp::audio::waveform@{concertapp::audio::waveform}}
+\subsubsection[{interpolate\_\-colors}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::audio::waveform::interpolate\_\-colors (
+\begin{DoxyParamCaption}
+\item[{}]{ colors, }
+\item[{}]{ flat = {\ttfamily False}, }
+\item[{}]{ num\_\-colors = {\ttfamily 256}}
+\end{DoxyParamCaption}
+)}}
+\label{namespaceconcertapp_1_1audio_1_1waveform_a6523a6c108b5e8711ad774d20439c9f4}
+\begin{DoxyVerb}given a list of colors, create a larger list of colors interpolating
+the first one. If flatten is True a list of numers will be returned. If
+False, a list of (r,g,b) tuples. num_colors is the number of colors wanted
+in the final list \end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceconcertapp_1_1audio_1_1waveform_a1e362a69de95f23ed1e9f30988ed1ed0}{
+\index{concertapp::audio::waveform@{concertapp::audio::waveform}!args@{args}}
+\index{args@{args}!concertapp::audio::waveform@{concertapp::audio::waveform}}
+\subsubsection[{args}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::audio::waveform::args} = (input\_\-file, {\bf output\_\-file\_\-w}, options.image\_\-width, options.image\_\-height, channels, options.fft\_\-size, options.f\_\-max, options.f\_\-min)}}
+\label{namespaceconcertapp_1_1audio_1_1waveform_a1e362a69de95f23ed1e9f30988ed1ed0}
+\hypertarget{namespaceconcertapp_1_1audio_1_1waveform_a92ef9ae366b0cdb6411aa777bed829f4}{
+\index{concertapp::audio::waveform@{concertapp::audio::waveform}!output\_\-file\_\-w@{output\_\-file\_\-w}}
+\index{output\_\-file\_\-w@{output\_\-file\_\-w}!concertapp::audio::waveform@{concertapp::audio::waveform}}
+\subsubsection[{output\_\-file\_\-w}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf concertapp::audio::waveform::output\_\-file\_\-w} = \char`\"{}.png\char`\"{}}}
+\label{namespaceconcertapp_1_1audio_1_1waveform_a92ef9ae366b0cdb6411aa777bed829f4}
+\hypertarget{namespaceconcertapp_1_1audio_1_1waveform_a02aa23f6042070992773f1489e2f888b}{
+\index{concertapp::audio::waveform@{concertapp::audio::waveform}!parser@{parser}}
+\index{parser@{parser}!concertapp::audio::waveform@{concertapp::audio::waveform}}
+\subsubsection[{parser}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::audio::waveform::parser} = optparse.OptionParser(\char`\"{}usage: \%prog \mbox{[}options\mbox{]} input-\/filename\char`\"{}, conflict\_\-handler=\char`\"{}resolve\char`\"{})}}
+\label{namespaceconcertapp_1_1audio_1_1waveform_a02aa23f6042070992773f1489e2f888b}

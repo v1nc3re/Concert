@@ -1,0 +1,106 @@
+\hypertarget{classconcertapp_1_1forms_1_1_create_segment_form}{
+\section{concertapp::forms::CreateSegmentForm Class Reference}
+\label{classconcertapp_1_1forms_1_1_create_segment_form}\index{concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}}
+}
+
+
+Allows the user to create a segment from an audio file or another segment.  
+
+
+
+
+Inherits django::forms::ModelForm.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classconcertapp_1_1forms_1_1_create_segment_form_1_1_meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconcertapp_1_1forms_1_1_create_segment_form_a9b284ab2b2225bbde865e5144acc0269}{clean\_\-beginning}
+\begin{DoxyCompactList}\small\item\em Ensures that the beginning value is a number and greater than zero. \item\end{DoxyCompactList}\item 
+def \hyperlink{classconcertapp_1_1forms_1_1_create_segment_form_adee711926c4c3f773583c7a473fd592a}{clean\_\-end}
+\begin{DoxyCompactList}\small\item\em Ensures that the end value is a number and greater than beginning. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classconcertapp_1_1forms_1_1_create_segment_form_a3253354235460c739c5128a37a72c4bb}{tag\_\-field} = forms.CharField(label='Tag', max\_\-length=80)
+\item 
+tuple \hyperlink{classconcertapp_1_1forms_1_1_create_segment_form_a343943e12b01273bf2178048f2d0cb49}{label\_\-field} = forms.CharField(label='Label', max\_\-length=80)
+\item 
+tuple \hyperlink{classconcertapp_1_1forms_1_1_create_segment_form_a01c2d2a5710a1e88ba34442f43860a4d}{group\_\-id} = forms.HiddenInput()
+\item 
+tuple \hyperlink{classconcertapp_1_1forms_1_1_create_segment_form_a4da25892ae0f466eaba6538dc213250f}{audio\_\-id} = forms.HiddenInput()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Allows the user to create a segment from an audio file or another segment. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classconcertapp_1_1forms_1_1_create_segment_form_a9b284ab2b2225bbde865e5144acc0269}{
+\index{concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}!clean\_\-beginning@{clean\_\-beginning}}
+\index{clean\_\-beginning@{clean\_\-beginning}!concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}}
+\subsubsection[{clean\_\-beginning}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::forms::CreateSegmentForm::clean\_\-beginning (
+\begin{DoxyParamCaption}
+\item[{}]{ self}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1forms_1_1_create_segment_form_a9b284ab2b2225bbde865e5144acc0269}
+
+
+Ensures that the beginning value is a number and greater than zero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The \hyperlink{classconcertapp_1_1forms_1_1_create_segment_form}{CreateSegmentForm} object \\
+\hline
+\end{DoxyParams}
+\hypertarget{classconcertapp_1_1forms_1_1_create_segment_form_adee711926c4c3f773583c7a473fd592a}{
+\index{concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}!clean\_\-end@{clean\_\-end}}
+\index{clean\_\-end@{clean\_\-end}!concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}}
+\subsubsection[{clean\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::forms::CreateSegmentForm::clean\_\-end (
+\begin{DoxyParamCaption}
+\item[{}]{ self}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1forms_1_1_create_segment_form_adee711926c4c3f773583c7a473fd592a}
+
+
+Ensures that the end value is a number and greater than beginning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The \hyperlink{classconcertapp_1_1forms_1_1_create_segment_form}{CreateSegmentForm} object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classconcertapp_1_1forms_1_1_create_segment_form_a4da25892ae0f466eaba6538dc213250f}{
+\index{concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}!audio\_\-id@{audio\_\-id}}
+\index{audio\_\-id@{audio\_\-id}!concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}}
+\subsubsection[{audio\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::forms::CreateSegmentForm::audio\_\-id} = forms.HiddenInput()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1forms_1_1_create_segment_form_a4da25892ae0f466eaba6538dc213250f}
+\hypertarget{classconcertapp_1_1forms_1_1_create_segment_form_a01c2d2a5710a1e88ba34442f43860a4d}{
+\index{concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}!group\_\-id@{group\_\-id}}
+\index{group\_\-id@{group\_\-id}!concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}}
+\subsubsection[{group\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::forms::CreateSegmentForm::group\_\-id} = forms.HiddenInput()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1forms_1_1_create_segment_form_a01c2d2a5710a1e88ba34442f43860a4d}
+\hypertarget{classconcertapp_1_1forms_1_1_create_segment_form_a343943e12b01273bf2178048f2d0cb49}{
+\index{concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}!label\_\-field@{label\_\-field}}
+\index{label\_\-field@{label\_\-field}!concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}}
+\subsubsection[{label\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::forms::CreateSegmentForm::label\_\-field} = forms.CharField(label='Label', max\_\-length=80)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1forms_1_1_create_segment_form_a343943e12b01273bf2178048f2d0cb49}
+\hypertarget{classconcertapp_1_1forms_1_1_create_segment_form_a3253354235460c739c5128a37a72c4bb}{
+\index{concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}!tag\_\-field@{tag\_\-field}}
+\index{tag\_\-field@{tag\_\-field}!concertapp::forms::CreateSegmentForm@{concertapp::forms::CreateSegmentForm}}
+\subsubsection[{tag\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::forms::CreateSegmentForm::tag\_\-field} = forms.CharField(label='Tag', max\_\-length=80)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1forms_1_1_create_segment_form_a3253354235460c739c5128a37a72c4bb}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+concertapp/\hyperlink{forms_8py}{forms.py}\end{DoxyCompactItemize}

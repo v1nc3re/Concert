@@ -1,0 +1,112 @@
+\hypertarget{classconcertapp_1_1forms_1_1_registration_form}{
+\section{concertapp::forms::RegistrationForm Class Reference}
+\label{classconcertapp_1_1forms_1_1_registration_form}\index{concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}}
+}
+
+
+A form used to register a new user in the system.  
+
+
+
+
+Inherits django::forms::ModelForm.
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classconcertapp_1_1forms_1_1_registration_form_1_1_meta}{Meta}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconcertapp_1_1forms_1_1_registration_form_a3d2dfd38425ecb55eb6578cf59235f9a}{clean\_\-username}
+\begin{DoxyCompactList}\small\item\em Validates the username field to ensure that the username is unique. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classconcertapp_1_1forms_1_1_registration_form_a1feae87227acf1bab84f794ddd92f9bc}{username}
+\item 
+tuple \hyperlink{classconcertapp_1_1forms_1_1_registration_form_ae7e72047b1f454db6f5c9c7232dc67b9}{email}
+\item 
+tuple \hyperlink{classconcertapp_1_1forms_1_1_registration_form_a9db2b1df2aa51ed583d6d29d1d9b23ad}{password1}
+\item 
+tuple \hyperlink{classconcertapp_1_1forms_1_1_registration_form_afa9b67cdb3d9db3e8c2d7899cc399d5c}{password2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A form used to register a new user in the system. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classconcertapp_1_1forms_1_1_registration_form_a3d2dfd38425ecb55eb6578cf59235f9a}{
+\index{concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}!clean\_\-username@{clean\_\-username}}
+\index{clean\_\-username@{clean\_\-username}!concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}}
+\subsubsection[{clean\_\-username}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::forms::RegistrationForm::clean\_\-username (
+\begin{DoxyParamCaption}
+\item[{}]{ self}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1forms_1_1_registration_form_a3d2dfd38425ecb55eb6578cf59235f9a}
+
+
+Validates the username field to ensure that the username is unique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The \hyperlink{classconcertapp_1_1forms_1_1_registration_form}{RegistrationForm} object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classconcertapp_1_1forms_1_1_registration_form_ae7e72047b1f454db6f5c9c7232dc67b9}{
+\index{concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}!email@{email}}
+\index{email@{email}!concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}}
+\subsubsection[{email}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::forms::RegistrationForm::email}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1forms_1_1_registration_form_ae7e72047b1f454db6f5c9c7232dc67b9}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+forms.EmailField(label='email',
+                         max_length=30,
+                         required=True)
+\end{DoxyCode}
+\hypertarget{classconcertapp_1_1forms_1_1_registration_form_a9db2b1df2aa51ed583d6d29d1d9b23ad}{
+\index{concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}!password1@{password1}}
+\index{password1@{password1}!concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}}
+\subsubsection[{password1}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::forms::RegistrationForm::password1}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1forms_1_1_registration_form_a9db2b1df2aa51ed583d6d29d1d9b23ad}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+forms.CharField(label='password1',
+                            max_length=60,
+                            required=True,
+                            widget=forms.PasswordInput(render_value=False))
+\end{DoxyCode}
+\hypertarget{classconcertapp_1_1forms_1_1_registration_form_afa9b67cdb3d9db3e8c2d7899cc399d5c}{
+\index{concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}!password2@{password2}}
+\index{password2@{password2}!concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}}
+\subsubsection[{password2}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::forms::RegistrationForm::password2}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1forms_1_1_registration_form_afa9b67cdb3d9db3e8c2d7899cc399d5c}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+forms.CharField(label='password2',
+                            max_length=60,
+                            required=True,
+                            widget=forms.PasswordInput(render_value=False))
+\end{DoxyCode}
+\hypertarget{classconcertapp_1_1forms_1_1_registration_form_a1feae87227acf1bab84f794ddd92f9bc}{
+\index{concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}!username@{username}}
+\index{username@{username}!concertapp::forms::RegistrationForm@{concertapp::forms::RegistrationForm}}
+\subsubsection[{username}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::forms::RegistrationForm::username}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1forms_1_1_registration_form_a1feae87227acf1bab84f794ddd92f9bc}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+forms.CharField(label='username',
+                        max_length=30,
+                        required=True)
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+concertapp/\hyperlink{forms_8py}{forms.py}\end{DoxyCompactItemize}

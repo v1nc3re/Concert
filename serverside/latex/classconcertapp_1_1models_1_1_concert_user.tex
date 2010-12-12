@@ -1,0 +1,58 @@
+\hypertarget{classconcertapp_1_1models_1_1_concert_user}{
+\section{concertapp::models::ConcertUser Class Reference}
+\label{classconcertapp_1_1models_1_1_concert_user}\index{concertapp::models::ConcertUser@{concertapp::models::ConcertUser}}
+}
+
+
+An extension to the User model accomplished through the Django supported AUTH\_\-PROFILE\_\-MODULE.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classconcertapp_1_1models_1_1_concert_user_a66409ebf3748ae90b9dd25ce9b50a2bc}{get\_\-collections\_\-dict}
+\begin{DoxyCompactList}\small\item\em This function will get all of the collections that a user is a member of, all of join requests for collections that the user is an administrator of, and that the user has requested to join, and returns all of this data in a dict that can be serialized. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classconcertapp_1_1models_1_1_concert_user_aa65285f7d709e88fa6a162d9bbf65ee5}{user} = models.ForeignKey(User, unique = True)
+\item 
+tuple \hyperlink{classconcertapp_1_1models_1_1_concert_user_aeeb833d02871195146e30f63026f5f56}{unread\_\-events} = models.ManyToManyField('\hyperlink{classconcertapp_1_1models_1_1_event}{Event}')
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An extension to the User model accomplished through the Django supported AUTH\_\-PROFILE\_\-MODULE. Each 'ConcertUser' is linked to a django User via a ForeginKey, thus allowing \hyperlink{classconcertapp_1_1models_1_1_concert_user}{ConcertUser} to hold extra attributes, accessable via $<$User$>$.get\_\-profile().$<$ConcertUser$>$.attribute 
+
+\subsection{Member Function Documentation}
+\hypertarget{classconcertapp_1_1models_1_1_concert_user_a66409ebf3748ae90b9dd25ce9b50a2bc}{
+\index{concertapp::models::ConcertUser@{concertapp::models::ConcertUser}!get\_\-collections\_\-dict@{get\_\-collections\_\-dict}}
+\index{get\_\-collections\_\-dict@{get\_\-collections\_\-dict}!concertapp::models::ConcertUser@{concertapp::models::ConcertUser}}
+\subsubsection[{get\_\-collections\_\-dict}]{\setlength{\rightskip}{0pt plus 5cm}def concertapp::models::ConcertUser::get\_\-collections\_\-dict (
+\begin{DoxyParamCaption}
+\item[{}]{ self}
+\end{DoxyParamCaption}
+)}}
+\label{classconcertapp_1_1models_1_1_concert_user_a66409ebf3748ae90b9dd25ce9b50a2bc}
+
+
+This function will get all of the collections that a user is a member of, all of join requests for collections that the user is an administrator of, and that the user has requested to join, and returns all of this data in a dict that can be serialized. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classconcertapp_1_1models_1_1_concert_user_aeeb833d02871195146e30f63026f5f56}{
+\index{concertapp::models::ConcertUser@{concertapp::models::ConcertUser}!unread\_\-events@{unread\_\-events}}
+\index{unread\_\-events@{unread\_\-events}!concertapp::models::ConcertUser@{concertapp::models::ConcertUser}}
+\subsubsection[{unread\_\-events}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::models::ConcertUser::unread\_\-events} = models.ManyToManyField('{\bf Event}')\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1models_1_1_concert_user_aeeb833d02871195146e30f63026f5f56}
+\hypertarget{classconcertapp_1_1models_1_1_concert_user_aa65285f7d709e88fa6a162d9bbf65ee5}{
+\index{concertapp::models::ConcertUser@{concertapp::models::ConcertUser}!user@{user}}
+\index{user@{user}!concertapp::models::ConcertUser@{concertapp::models::ConcertUser}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf concertapp::models::ConcertUser::user} = models.ForeignKey(User, unique = True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classconcertapp_1_1models_1_1_concert_user_aa65285f7d709e88fa6a162d9bbf65ee5}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+concertapp/\hyperlink{models_8py}{models.py}\end{DoxyCompactItemize}
