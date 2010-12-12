@@ -19,3 +19,6 @@ git add clientside/
 
 echo 'Committing'
 git commit -a -m 'Documentation update.'
+
+echo 'Pushing'
+git push origin gh-pages
