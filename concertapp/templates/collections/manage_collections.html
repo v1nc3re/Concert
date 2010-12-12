@@ -1,0 +1,50 @@
+{% extends 'base_site.html' %}
+
+{% load extra_template_tags %}
+{% load panels %}
+
+{% block middle %}
+
+    {# Create/join collection and manage collections panels #}
+
+    {% panel 'collections/partials/create_join_collection_panel.html' 'Create/Join a Collection' 'create_join' %}
+
+    {% panel 'collections/partials/social_panel.html' 'Who else is using Concert?' 'social' %}
+
+{% endblock %}
+
+
+{% block bottom %}
+    {% panel 'collections/partials/manage_collections_panel.html' 'Manage Collections' 'manage_collections' %}
+{% endblock %}
+
+{% block clientside %}
+    {# Client side templates #}
+
+    {#  an auto complete result when searching for a group #}
+    <script id="create_join_result" type="text/x-jquery-tmpl">
+        <div class="create-join-result table-row" id="create_join_result-${id}">
+            <div class="collection_name-${id}" class="collection_name table-cell">${name}</div>
+            <button id="collection_info_button-${id}" class="text_button collection_info_button table-cell">Info</button>
+            <button id="collection_join_button-${id}" class="text_button collection_join_button table-cell">Join</button>
+        </div>
+    </script>
+
+    {#  the first "create collection" result when no groups are found. #}
+    <script id="create_join_create_new" type="text/x-jquery-tmpl">
+        <div class="create-join-result create-join-create-new" id="create_join_create_new">
+            <a href="#" id="create_new_collection" data-collection_name="${term}">
+                Create collection "${term}"
+            </a>
+        </div>
+    </script>
+
+    <script id="collection_template" type="text/x-jquery-tmpl">
+        {% include "../templates/collections/clientside/user_collection_template.html" %}
+    </script>
+
+    <script id="collection_info_widget_template" type="text/x-jquery-tmpl">
+        {% include "../templates/collections/clientside/collection_info_widget.html" %}
+    </script>
+
+{% endblock %}
