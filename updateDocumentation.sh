@@ -26,6 +26,7 @@ echo 'Adding new documentation to git'
 git add clientside/ serverside/
 # Remove code, just keep documentation
 git rm -r concertapp/
+rm -R concertapp/
 echo 'Committing'
 git commit -a -m 'Documentation update.'
 
